@@ -21,7 +21,7 @@ contract DataAttester is Ownable {
     }
 
     function attest(address recipient, uint256 someNumber) external onlyOwner returns (uint64) {
-        bytes[] memory recipients = new bytes[](2);
+        bytes[] memory recipients = new bytes[](1);
         recipients[0] = abi.encode(recipient);
         Attestation memory a = Attestation({
             schemaId: schemaId,
