@@ -33,6 +33,7 @@ contract ZKHook is ISPHook, SHA256PreimageVerifier {
         if (_msgSender() != spInstance) revert Unsupported();
         (uint256[2] memory _pA, uint256[2][2] memory _pB, uint256[2] memory _pC, uint256[32] memory _pubSignals) =
             abi.decode(extraData, (uint256[2], uint256[2][2], uint256[2], uint256[32]));
+        // If the SHA256 preimage proof verification fails, revert.
         if (!verifyProof(_pA, _pB, _pC, _pubSignals)) revert ZKVerificationFailed();
     }
 
