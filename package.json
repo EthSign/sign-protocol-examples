@@ -22,8 +22,12 @@
   "license": "ISC",
   "dependencies": {
     "@ethsign/sign-protocol-evm": "1.1.1",
+    "@ethsign/sp-sdk": "^0.8.0",
     "@openzeppelin/contracts": "5.1.0",
-    "@openzeppelin/contracts-upgradeable": "5.1.0"
+    "@openzeppelin/contracts-upgradeable": "5.1.0",
+    "cors": "^2.8.5",
+    "express": "^4.21.1",
+    "viem": "^2.21.48"
   },
   "devDependencies": {
     "@nomicfoundation/hardhat-foundry": "^1.1.2",
