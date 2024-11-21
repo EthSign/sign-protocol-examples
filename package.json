@@ -33,6 +33,8 @@
     "@nomicfoundation/hardhat-foundry": "^1.1.2",
     "@nomicfoundation/hardhat-toolbox": "^5.0.0",
     "@openzeppelin/hardhat-upgrades": "^3.5.0",
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.0",
     "@types/node": ">=16.0.0",
     "@typescript-eslint/eslint-plugin": "^7.0.1",
     "dotenv": "^16.4.4",
